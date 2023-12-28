@@ -7,4 +7,4 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
       - name: Run hello
-        run: echo $(cat hello-world.txt)
+        run: echo $(cat hello_world.txt)
