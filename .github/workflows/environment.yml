@@ -7,4 +7,10 @@ jobs:
     environment:
       name: production
     steps:
-      - run: echo This is a var from an environment ${{ vars.NAME }}
+      - run: echo This is a var from production ${{ vars.NAME }}
+  pages-job:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - run: echo This is a var from github pages ${{ vars.NAME }}
