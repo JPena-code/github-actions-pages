@@ -7,4 +7,4 @@ jobs:
     environment:
       name: production
     steps:
-      - run: echo This is a var from an environment ${{ env.NAME }}
+      - run: echo This is a var from an environment ${{ vars.NAME }}
