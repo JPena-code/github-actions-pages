@@ -42,7 +42,7 @@ jobs:
       id-token: write
     environment:
       name: production
-      url: ${{ steps.deployment.outputs.URL_PAGE }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
